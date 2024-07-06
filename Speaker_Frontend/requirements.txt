@@ -1,0 +1,2 @@
+gradio==4.37.2
+Requests==2.32.3
