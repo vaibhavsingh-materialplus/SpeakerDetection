@@ -5,7 +5,7 @@ import requests
 
 def predict(text):
     
-    url = "http://localhost:8000/predict/"  # Replace with your FastAPI server URL
+    url = "http://backend:8000/predict/"  # Replace with your FastAPI server URL
     data = {"text": text}
     response = requests.post(url, json=data)
     
@@ -17,7 +17,7 @@ def predict(text):
 
 
 def publish(folder,text):
-    url = "http://localhost:8000/publish/"  # Replace with your FastAPI server URL
+    url = "http://backend:8000/publish/"  # Replace with your FastAPI server URL
     
     data = {"folder": folder, "text": text}
     
