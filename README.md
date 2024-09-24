@@ -7,10 +7,9 @@
 - [Installation and Setup](#installation-and-setup)
 - [Usage](#usage)
 - [Future Improvements](#future-improvements)
-- [License](#license)
 
 ## Project Overview
-**Speaker Detection** is a tool that allows users to upload audio files, associate them with a speaker, and train the system to recognize that speaker in future audio samples. The project uses **SpeechBrain/ECAPA** for embedding generation and **Qdrant vector database** for efficient speaker recognition via cosine similarity.
+**Speaker Detection** is a tool that allows users to upload audio files, associate them with a speaker, and train the system to recognize that speaker in future audio samples. The project uses **SpeechBrain/ECAPA**[https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb] for embedding generation and **Qdrant vector database** for efficient speaker recognition via cosine similarity.
 
 The project consists of two main functionalities:
 1. **Speaker Upload Tab:** Users can upload audio samples and name the speakers. These samples are preprocessed, and embeddings are generated and stored in the Qdrant vector database for future comparisons.
@@ -36,8 +35,7 @@ The project consists of two main functionalities:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/speaker-detection.git
-   cd speaker-detection
+   git clone https://github.com/vaibhavsingh-materialplus/SpeakerDetection.git
    ```
 
 2. **Build and Start the Docker Containers**
